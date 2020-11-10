@@ -3,12 +3,12 @@ import './styles.css';
 
 type Props = {
      title: string;
-     onPress: Function;
+     onClick?: Function;
 }
 
-const Button = ({title, onPress} : Props) => {
+const Button = ({title, onClick} : Props) => {
      return (
-          <button className="btn" onClick={onPress}>{title}</button>
+          <button className="btn" onClick={() => onClick}>{title}</button>
      );
 }
 

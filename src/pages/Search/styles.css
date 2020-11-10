@@ -1,0 +1,33 @@
+.search-container{
+     background: #E6F7FF;
+     border-radius: 16px;
+     height: 270px;
+     margin: 54px 100px 54px 90px;
+     padding-top: 50px;
+     padding-left: 100px;
+}
+
+.search-title {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 38px;
+     line-height: 46px;
+     color: #262626;
+}
+
+.search-input {
+     background: #FFFFFF;
+     border: 1px solid #D9D9D9;
+     box-sizing: border-box;
+     border-radius: 4px;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+     width: 650px;
+     height: 40px;
+     display: flex;
+     margin-bottom: 30px;
+}

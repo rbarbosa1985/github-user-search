@@ -1,6 +1,20 @@
 .btn{
-     width: 100px;
-     height: 40px;
      background: #1890FF;
      border-radius: 4px;
+     border: 0px;
+     padding: 8px 18px 8px 18px;
+     color: #fff;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     outline:none;
 }
+
+.btn:hover{
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

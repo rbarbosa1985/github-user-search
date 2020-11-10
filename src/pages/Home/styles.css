@@ -1,0 +1,32 @@
+.container{
+     padding-top: 180px;
+     padding-left: 120px; 
+     font-family: Red Hat Display;
+}
+
+.title-home{
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 64px;
+     align-items: center;
+     letter-spacing: 0.02em;
+     color: #062847;
+     margin: 0;
+     padding-bottom: 24px;
+     display:flex;
+     width: 50%;
+}
+
+.text-home{
+     font-style: normal;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 36px;
+     color: #5A6774;
+     padding-bottom: 20px;
+     margin: 0;
+     display:flex;
+     width: 50%;
+     
+}
