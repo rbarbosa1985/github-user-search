@@ -3,7 +3,7 @@ import './styles.css';
 
 type Props = {
      title: string;
-     onClick?: Function;
+     onClick?: () => void;
 }
 
 const Button = ({title, onClick} : Props) => {

@@ -7,7 +7,7 @@ type RequestParams = {
      params?: object;
 }
 
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://api.github.com/users';
 
 export const makeRequest = ( { method = 'GET', url, data, params} : RequestParams ) => {
      return axios({
