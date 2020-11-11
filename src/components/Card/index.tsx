@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/';
+import moment from 'moment';
 import './styles.css';
 import {UserResponse} from '../Types/User';
 
@@ -11,6 +12,10 @@ const Card = ({ user } : user) => {
      function onHandleClick() {
           window.open(user.html_url);
      }
+
+     const formatDate = (date: string) => {
+          return moment(date).format('DD/MM/YYYY');
+      }
 
      return (
           <div className="searched-container">
@@ -27,7 +32,7 @@ const Card = ({ user } : user) => {
                                    <div className="text-info"><text className="text">Empresa: </text>{user.company}</div>
                                    <div className="text-info"><text className="text">Website/Blog: </text>{user.blog}</div>
                                    <div className="text-info"><text className="text">Localidade: </text>{user.location}</div>
-                                   <div className="text-info"><text className="text">Membro desde: </text>{user.created_at}</div>
+                                   <div className="text-info"><text className="text">Membro desde: </text>{formatDate(user.created_at)}</div>
                               </div>
                          </div>
                     </div>
