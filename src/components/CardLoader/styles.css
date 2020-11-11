@@ -1,0 +1,11 @@
+.searched-container{
+     background: #F5F5F5;
+     border-radius: 8px;
+     margin: 0px 100px 54px 90px;
+     padding: 30px;    
+}
+
+.searched-perfil{
+     margin-bottom: 20px;
+     display: flex;
+}
