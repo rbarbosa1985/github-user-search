@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './styles.css';
 import Button from '../../components/Button';
 import makeRequest from '../../utils/request';
-import {UserResponse} from '../../components/Types/User';
+import { UserResponse } from '../../components/Types/User';
 import Card from '../../components/Card';
 import CardLoader from '../../components/CardLoader';
 
@@ -31,8 +31,6 @@ const Search = () => {
                <div className="search-container">
                     <h1 className="search-title">Encontre um perfil Github</h1>
                     <input className="search-input" value={name} onChange={handleOnChange}></input>      
-                    <button className="btn" onClick={onHandleClick}>Teste</button> 
-                    <button className="btn" onClick={() => setName('')}>Limpar</button>        
                     <Button title="Encontrar" onClick={onHandleClick}/>
                </div>
                {isLoading ? <CardLoader/>: (user && <Card user={user}/>)}

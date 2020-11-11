@@ -3,12 +3,15 @@ import './styles.css';
 
 type Props = {
      title: string;
-     onClick?: () => void;
+     onClick: Function;
 }
 
-const Button = ({title, onClick} : Props) => {
+const Button = ({title, onClick}: Props) => {
+     function onHandleClick() {
+          onClick();
+     }
      return (
-          <button className="btn" onClick={() => onClick}>{title}</button>
+          <button className="btn" onClick={onHandleClick}>{title}</button>
      );
 }
 

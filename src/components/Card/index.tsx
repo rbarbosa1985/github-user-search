@@ -8,6 +8,10 @@ type user = {
 }
 
 const Card = ({ user } : user) => {
+     function onHandleClick() {
+          window.open(user.html_url);
+     }
+
      return (
           <div className="searched-container">
                     <div className="searched-perfil">
@@ -27,9 +31,7 @@ const Card = ({ user } : user) => {
                               </div>
                          </div>
                     </div>
-                    <a className="testeimprimir" href={user.html_url} target="blank">
-                         <Button title="Ver perfil"/>
-                    </a>
+                    <Button title="Ver perfil" onClick={onHandleClick}/>
                </div>
      );
 }
